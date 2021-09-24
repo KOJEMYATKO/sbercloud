@@ -1,0 +1,134 @@
+﻿<Window x:Class="SberCloud.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SberCloud"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl
+  Style="{StaticResource MaterialDesignNavigatilRailTabControl}"
+  BorderThickness="0"
+  BorderBrush="Transparent"
+  TabStripPlacement="Left"
+  materialDesign:ShadowAssist.ShadowDepth="Depth0"
+  materialDesign:ColorZoneAssist.Mode="Light"
+  SnapsToDevicePixels="True" >
+            <TabItem Width="145">
+                <TabItem.Header>
+                    <StackPanel
+                        Orientation="Horizontal"
+        Height="auto"
+        Width="auto">
+                        <materialDesign:PackIcon
+          Kind="HomeOutline"
+          Width="24"
+          Height="24"
+          HorizontalAlignment="Center" 
+                            Margin="0 0 10 0"/>
+                        <TextBlock
+                           VerticalAlignment="Center"
+          Text="Главная"
+          HorizontalAlignment="Center" 
+                            />
+                    </StackPanel>
+                </TabItem.Header>
+                <TextBlock>
+      <Run
+        Text="tab 1 content. Default look and behaviors." />
+      <LineBreak />
+      <LineBreak />
+      <Run
+        FontStyle="Italic">
+      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+    </Run>
+                </TextBlock>
+            </TabItem>
+            <TabItem
+                Width="145">
+                <TabItem.Header>
+                    <StackPanel
+                        Orientation="Horizontal"
+        Height="auto"
+        Width="auto">
+                        <materialDesign:PackIcon
+          Kind="AccountSupervisorOutline"
+          Width="24"
+          Height="24"
+          HorizontalAlignment="Center"
+                             Margin="0 0 10 0"/>
+                        <TextBlock
+                            VerticalAlignment="Center"
+          Text="Recent"
+          HorizontalAlignment="Center" />
+                    </StackPanel>
+                </TabItem.Header>
+                <TextBlock>
+      <Run
+        Text="tab 2 content. Default look and behaviors." />
+      <LineBreak />
+      <LineBreak />
+      <Run
+        FontStyle="Italic">
+      Praesent sed dui arcu. Vivamus porta auctor sagittis
+    </Run>
+                </TextBlock>
+            </TabItem>
+            <TabItem Width="145">
+                <TabItem.Header>
+                    <StackPanel
+                        
+        Height="auto"
+        Width="auto"
+                        Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                             Margin="0 0 10 0"
+          Kind="Images"
+          Width="24"
+          Height="24"
+          HorizontalAlignment="Center" />
+                        <TextBlock
+                            VerticalAlignment="Center"
+          Text="Photos"
+          HorizontalAlignment="Center" />
+                    </StackPanel>
+                </TabItem.Header>
+                <TextBlock><Run
+        Text="tab 3 content. Default look and behaviors." /><LineBreak /><LineBreak /></TextBlock>
+            </TabItem>
+            <TabItem Width="145">
+                <TabItem.Header>
+                    <StackPanel
+        Height="auto"
+        Width="auto"
+                        Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                             Margin="0 0 10 0"
+          Kind="MusicBoxMultiple"
+          Width="24"
+          Height="24"
+          HorizontalAlignment="Center" />
+                        <TextBlock
+          Text="Sounds"
+          HorizontalAlignment="Center" />
+                    </StackPanel>
+                </TabItem.Header>
+                <TextBlock>
+      <Run
+        Text="tab 4 content. Default look and behaviors." />
+      <LineBreak />
+      <LineBreak />
+                </TextBlock>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
